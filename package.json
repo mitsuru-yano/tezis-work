@@ -1,0 +1,15 @@
+{
+	"dependencies": {
+		"concurrently": "^7.2.1"
+	},
+	"name": "tezis-work",
+	"version": "1.0.0",
+	"scripts": {
+		"start": "node app.js",
+		"server": "npm run dev --prefix backend",
+		"client": "npm run start --prefix frontend",
+		"dev": "concurrently \"npm run server\" \"npm run client\""
+	},
+	"author": "Eugenia Pereverzeva <xoxotwm21.01@gmail.com>",
+	"license": "ISC"
+}
